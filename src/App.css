@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: "#c4696e";
+}
+
+html {
+  font-size: 62.5%;
+}

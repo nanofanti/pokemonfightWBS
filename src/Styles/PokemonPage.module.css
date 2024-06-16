@@ -1,0 +1,164 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow_part {
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+  width: 50rem;
+  margin-top: 5rem;
+}
+
+.downPart {
+  margin-top: 10rem;
+  background-color: white;
+  height: 60rem;
+  width: 100rem;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.Pokename {
+  font-size: 8rem;
+  font-family: "Kavoon", serif;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+.arrow {
+  align-self: center;
+}
+
+.image {
+  width: 50rem;
+  height: 50rem;
+  margin: 7rem 0 4rem 0;
+  align-self: center;
+  background-color: antiquewhite;
+  padding: 5rem;
+  border-radius: 25px;
+}
+
+.PokemonNameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50rem;
+}
+
+.barContainer {
+  width: 30rem;
+  height: 50rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stats {
+  width: 30rem;
+  color: white;
+  font-size: 6rem;
+  font-family: "Kavoon", serif;
+  -webkit-text-stroke: black 1px;
+  text-align: center;
+}
+
+.tags {
+  width: 15rem;
+}
+
+.arrowImage {
+  height: 8rem;
+  width: 8rem;
+}
+
+.textStats {
+  margin: -5px;
+  margin-left: 4px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.tester {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.battleButton {
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid black;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.battleButton:hover {
+  background-color: rgba(240, 248, 255, 0.233);
+}
+
+@media only screen and (max-width: 1065px) {
+  .downPart {
+    width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .image {
+    width: 25rem;
+    height: 25rem;
+  }
+  .arrow_part {
+    justify-content: center;
+    gap: 2rem;
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .downPart {
+    width: 25rem;
+  }
+  .barContainer {
+    width: 20rem;
+  }
+  .stats {
+    font-size: 3.5rem;
+    width: 20rem;
+  }
+  .PokemonNameContainer {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .Pokename {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .arrow_part {
+    justify-content: center;
+    width: 20rem;
+  }
+  .arrowImage {
+    width: 5rem;
+    height: 5rem;
+    gap: 2rem;
+  }
+
+  .battleButton {
+    font-size: 1.5rem;
+  }
+}

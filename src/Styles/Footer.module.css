@@ -1,0 +1,21 @@
+.container {
+  height: 12rem;
+  background-color: #c4696e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffcc01;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .container {
+    font-size: 1rem;
+  }
+}

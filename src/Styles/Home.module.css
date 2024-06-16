@@ -1,0 +1,97 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 3rem;
+  background-image: url(/background_home.png);
+  background-color: black;
+  background-size: cover;
+  height: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 5px solid black;
+  border-bottom: 8px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+}
+
+.btn {
+  margin-top: 5rem;
+  outline: none;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blinkClass {
+  animation: blink 1.6s normal infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 1095px) {
+  .container {
+    width: 80rem;
+  }
+}
+
+@media only screen and (max-width: 1077px) {
+  .home_banner {
+    width: 80rem;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .container {
+    width: 50rem;
+  }
+  .home_banner {
+    width: 50rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    height: 50rem;
+  }
+  .home_banner {
+    width: 40rem;
+  }
+  .pokedex_button_home {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 30rem;
+  }
+  .pokedex_button_home {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .home_banner {
+    width: 30rem;
+  }
+}

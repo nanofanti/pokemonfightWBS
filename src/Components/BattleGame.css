@@ -1,0 +1,505 @@
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #c4696e;
+}
+
+.pokemon-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  border: solid 1px black;
+  border-radius: 20px;
+  background-color: #dcd441;
+  transition: transform 0.3s ease;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.911);
+  width: 40 rem;
+}
+
+.pokemon-option:hover {
+  transform: scale(1.05);
+}
+
+.pokeOptPic {
+  height: 8rem;
+  width: auto;
+  margin-left: 1.5rem;
+}
+
+.SelectPokeBut {
+  padding: 10px 10px;
+  background-color: #4370709b;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.911);
+}
+
+.PokemonDisplays {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SelectPokeBut:hover,
+.ActionButtons:hover,
+.TryagainButton:hover {
+  background-color: #5a9d9d; /* Lighter shade for hover */
+  cursor: pointer;
+}
+
+.SelectPokeBut:active,
+.ActionButtons:active,
+.TryagainButton:active {
+  transform: scale(0.98); /* Slightly smaller on click */
+  background-color: #3c6e6e; /* Darker shade for click */
+}
+
+/* Improving readability and interactivity for buttons */
+.SelectPokeBut,
+.ActionButtons,
+.TryagainButton {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.hp-bar {
+  transition: width 1s ease;
+  height: 20px;
+  background-color: green;
+  border-radius: 5px;
+}
+
+.pokemon > img {
+  height: 50rem;
+  width: auto;
+}
+
+.pokemon-menuSub {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5rem;
+}
+
+.instructions {
+  background-color: #f0f8ff31;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pmenue {
+  font-size: 2rem;
+}
+
+.instructionsh1 {
+  margin-left: 3rem;
+  font-size: 4rem;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.battle-screen {
+  background-image: url(/background_home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5rem 5rem 0 5rem;
+  border-left: solid 10px black;
+  border-right: solid 10px black;
+  border-top: solid 5px black;
+  border-bottom: solid 5px black;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.LogicDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dddddd3b;
+  padding: 1rem;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  border: solid 1px black;
+}
+
+.ActionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ActionButtons {
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #4370709b;
+  font-size: 2rem;
+}
+.BattleMessage {
+  flex: 1;
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.TryagainButton {
+  background: none;
+  border: none;
+}
+
+.endImg {
+  height: 25rem;
+  width: auto;
+}
+.endImgT {
+  height: 15rem;
+  width: auto;
+}
+
+.pokemon-win-screen {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5rem 5rem 0 5rem;
+  background-image: url(/happyAsh.jpeg);
+  background-position: center;
+  background-size: cover; /* Show entire image */
+  padding: 1rem;
+  border-left: solid 10px black;
+  border-right: solid 10px black;
+  border-top: solid 5px black;
+  border-bottom: solid 5px black;
+}
+.container_lose_screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rem;
+}
+.pokemon-lose-screen {
+  background-image: url(/PokeCenter.webp);
+  width: 100rem;
+  height: 80rem;
+  background-position: center;
+  background-size: cover; /* Show entire image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  border-left: solid 10px black;
+  border-right: solid 10px black;
+  border-top: solid 5px black;
+  border-bottom: solid 5px black;
+}
+
+/* Style for the name input field */
+.nameInput {
+  width: 30rem;
+  height: 5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 2px solid #437070; /* Change the color as needed */
+  border-radius: 8px;
+  background-color: #f0f8ff; /* Light background color */
+  font-size: 4rem; /* Adjust size as needed */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.nameInput:focus {
+  border-color: #5a9d9d; /* Slightly darker shade for focus */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2),
+    0 0 5px rgba(90, 157, 157, 0.5); /* More prominent shadow when focused */
+  outline: none; /* Remove default outline */
+}
+
+/* Style for the submit score button */
+.submitScoreBtn {
+  width: 20rem;
+  height: 4rem;
+  background-color: #437070; /* Change the color as needed */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem; /* Adjust size as needed */
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.submitScoreBtn:hover {
+  background-color: #5a9d9d; /* Lighter shade for hover */
+}
+
+.submitScoreBtn:active {
+  transform: scale(0.98); /* Slight press effect */
+}
+
+/* ------------------------------------------------------------------------- */
+
+#UserPokehealth {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+}
+
+#UserPokehealth::-webkit-progress-bar {
+  background-color: #ddd;
+}
+
+#UserPokehealth::-webkit-progress-value {
+  background-color: green;
+}
+
+#OpponentPokehealth {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+}
+
+#OpponentPokehealth::-webkit-progress-bar {
+  background-color: #ddd;
+}
+
+#OpponentPokehealth::-webkit-progress-value {
+  background-color: red;
+}
+
+.pokemon {
+  transition: margin-left 0.5s ease-in-out;
+  background-color: rgba(240, 248, 255, 0.233);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.attack-animation {
+  margin-left: 50px;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.pokemon-attacking {
+  animation: shake 0.8s;
+  animation-iteration-count: 1;
+}
+/* ------------------------------------------------------------------------- */
+
+.LoadingDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 89vh;
+}
+
+.pokemon_name_h3 {
+  font-size: 5rem;
+}
+@media only screen and (max-width: 700px) {
+  .pokemon-menuSub {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #pokemon_attacking {
+    width: 30rem;
+    height: 30rem;
+  }
+  #pokemon_opponent_pic {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .BattleMessage {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 835px) {
+  .ActionButtons {
+    font-size: 1rem;
+  }
+  .BattleMessage {
+    font-size: 1.5rem;
+  }
+
+  #pokemon_attacking {
+    width: 20rem;
+    height: 20rem;
+  }
+  #pokemon_opponent_pic {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .pokemon_name_h3 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .ActionContainer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  #pokemon_attacking {
+    width: 15rem;
+    height: 15rem;
+  }
+  #pokemon_opponent_pic {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .pokemon_name_h3 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  #pokemon_attacking {
+    width: 10rem;
+    height: 10rem;
+  }
+  #pokemon_opponent_pic {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .pokemon_name_h3 {
+    font-size: 2rem;
+  }
+
+  .LogicDisplay {
+    margin-bottom: 5rem;
+  }
+  .ActionButtons {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  #pokemon_attacking {
+    width: 10rem;
+    height: 10rem;
+  }
+  #pokemon_opponent_pic {
+    width: 10rem;
+    height: 10rem;
+  }
+  .LogicDisplay {
+    flex-wrap: wrap;
+  }
+
+  .PokemonDisplays {
+    justify-content: center;
+    column-gap: 5rem;
+  }
+  .ActionContainer {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #pokemon_attacking {
+    width: 7rem;
+    height: 7rem;
+  }
+  #pokemon_opponent_pic {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .pokemon_name_h3 {
+    font-size: 1.5rem;
+  }
+  .PokemonDisplays {
+    column-gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .PokemonDisplays {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .ActionContainer {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .pokemon-lose-screen {
+    width: 60rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .pokemon-lose-screen {
+    width: 40rem;
+  }
+
+  .endImg {
+    height: 15rem;
+  }
+
+  .endImgT {
+    height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .pokemon-lose-screen {
+    width: 30rem;
+  }
+  .nameInput {
+    width: 15rem;
+  }
+  .endImg {
+    height: 10rem;
+  }
+
+  .endImgT {
+    height: 5rem;
+  }
+}

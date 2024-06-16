@@ -1,0 +1,62 @@
+.leaderboard-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.leaderboard-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.leaderboard_title {
+  font-size: 3rem;
+}
+
+.leaderboard-list li {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-list li:nth-child(1) {
+  background-color: gold;
+}
+
+.leaderboard-list li:nth-child(2) {
+  background-color: silver;
+}
+
+.leaderboard-list li:nth-child(3) {
+  background-color: #cd7f32; /* Bronze */
+}
+
+.leaderboard-list li:not(:last-child) {
+  border-bottom: none;
+}
+
+.leaderboard-player {
+  font-weight: bold;
+  color: #333;
+  font-size: 2rem;
+}
+
+.leaderboard-score {
+  color: #666;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,8 @@
+create netlify.toml file
+
+in the file insert 
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
